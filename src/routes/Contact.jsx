@@ -1,4 +1,9 @@
 import react from 'react';
 
-const Contact = () => <h1>Contact Page</h1>;
-export default Contact;
+export default function Contact() {
+    return(
+        <h1 className={"heading1"}>
+            Contact Page
+        </h1>
+    )
+}

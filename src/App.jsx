@@ -25,20 +25,22 @@ export default function App() {
     return(
         <BrowserRouter>
             {/* specific routes for each page  */}
-            <Navbar/>
-                <Routes>
-                    <Route path="/" element={<Home />} />
+            <body>
+                <Navbar/>
+                    <Routes>
+                        <Route path="/" element={<Home />} />
 
-                    <Route path="/about" element={<About />} />
+                        <Route path="/about" element={<About />} />
 
-                    <Route path="/contact" element={<Contact />} />
+                        <Route path="/contact" element={<Contact />} />
 
-                    <Route path="/projects" element={<Projects />} />
+                        <Route path="/projects" element={<Projects />} />
 
-                    <Route path='Gallery' element={<Gallery/>} />
+                        <Route path='Gallery' element={<Gallery/>} />
 
-                    <Route path='*' element={<Notfound />} />
-                </Routes>
+                        <Route path='*' element={<Notfound />} />
+                    </Routes>
+            </body>
         </BrowserRouter>
     );
 }

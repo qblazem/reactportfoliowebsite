@@ -1,4 +1,11 @@
 import react from 'react';
 
-const Projects = () => <h1>Projects Page</h1>
-export default Projects;
+
+export default function Projects() {
+    return(
+        <h1 className={"heading1"}>
+            Projects Page
+        </h1>
+    )
+}
+

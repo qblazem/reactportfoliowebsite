@@ -1,4 +1,9 @@
 import react from 'react';
 
-const About = () => <h1>About Page</h1>
-export default About;
+export default function About() {
+    return(
+        <h1 className={'heading1'}>
+            About page
+        </h1>
+    )
+}
