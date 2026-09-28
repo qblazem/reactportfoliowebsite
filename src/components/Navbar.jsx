@@ -2,17 +2,17 @@ import React from 'react';
 
 function Navbar() {
     return (
-        <header className={'navbar'}>
-            <div className={'logo'}>
-                test.dev
+        <header>
+            <div className={"navbar"}>
+                <div className={'logo'}>
+                    quillan.dev
+                </div>
+                <nav>
+                    <a href="/">Home</a>
+                    <a href="/projects">Projects</a>
+                    <a href="/about">About</a>
+                </nav>
             </div>
-            <nav>
-                <a href="/">Home</a>
-                <a href="/gallery">Gallery</a>
-                <a href="/projects">Projects</a>
-                <a href="/contact">Contact</a>
-            </nav>
-
         </header>
 
     );

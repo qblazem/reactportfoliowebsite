@@ -3,46 +3,42 @@ import './App.css'
 import { BrowserRouter, Route, Routes, Outlet } from 'react-router-dom';
 import Home from "./routes/Home.jsx";
 import Projects from "./routes/Projects.jsx";
-import Contact from "./routes/Contact.jsx";
-import Gallery from "./routes/Gallery.jsx";
+import About from "./routes/About.jsx";
 import Notfound from "./routes/Notfound";
 import MyButton from "./components/Button.jsx";
 import Navbar from "./components/Navbar.jsx";
+import Footer from "./components/Footer.jsx";
 
 
 
 
 export default function App() {
     return(
-        <body>
-            <BrowserRouter>
-                {/* specific routes for each page  */}
-                <header>
-                    <Navbar/>
-                    <h1>
+        <BrowserRouter>
+            {/* specific routes for each page  */}
+            <header>
+                <Navbar/>
+                <h1>
 
-                    </h1>
+                </h1>
 
-                </header>
-                <main>
-                    <Routes>
+            </header>
+            <main>
+                <Routes>
 
-                        <Route path="/" element={<Home />} />
+                    <Route path="/" element={<Home />} />
 
-                        <Route path="/contact" element={<Contact />} />
+                    <Route path="/about" element={<About />} />
 
-                        <Route path="/projects" element={<Projects />} />
+                    <Route path="/projects" element={<Projects />} />
+                    
+                    <Route path='*' element={<Notfound />} />
+                </Routes>
+            </main>
 
-                        <Route path='Gallery' element={<Gallery/>} />
+            <Footer />
 
-                        <Route path='*' element={<Notfound />} />
-                    </Routes>
-                </main>
-                <footer>
-
-                </footer>
-            </BrowserRouter>
-        </body>
+        </BrowserRouter>
     );
 }
 
