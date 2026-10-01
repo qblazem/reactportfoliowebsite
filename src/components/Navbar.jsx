@@ -1,12 +1,15 @@
 import React from 'react';
+import {Link} from "react-router-dom";
 
 function Navbar() {
     return (
         <header>
             <div className={"navbar"}>
-                <div className={'logo'}>
-                    quillan.dev
-                </div>
+                <Link to="/about" className="logo-link">
+                    <div className={'logo'}>
+                        quillan.dev
+                    </div>
+                </Link>
                 <nav>
                     <a href="/">Home</a>
                     <a href="/projects">Projects</a>
@@ -16,6 +19,6 @@ function Navbar() {
         </header>
 
     );
-};
+}
 
 export default Navbar;

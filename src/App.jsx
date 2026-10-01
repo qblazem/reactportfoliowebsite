@@ -6,6 +6,7 @@ import About from "./routes/About.jsx";
 import Notfound from "./routes/Notfound";
 import Navbar from "./components/Navbar.jsx";
 import Footer from "./components/Footer.jsx";
+import ScrollToTop from "./components/ScrollToTop.jsx";
 
 
 
@@ -14,6 +15,9 @@ export default function App() {
     return(
         <BrowserRouter>
             {/* specific routes for each page  */}
+
+            <ScrollToTop />
+
             <Navbar/>
 
             <main>

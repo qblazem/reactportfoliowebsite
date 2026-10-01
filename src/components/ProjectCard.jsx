@@ -1,4 +1,5 @@
 import React from "react";
+import {Link} from "react-router-dom";
 
 export default function ProjectCard({ project, detailed = false }) {
     return (
@@ -10,34 +11,36 @@ export default function ProjectCard({ project, detailed = false }) {
                 </p>
             )}
 
-            <img
-                className="project-card-image"
-                src={project.image}
-                alt={project.title}
-            />
+            <Link to={'/projects'} className={'project-link'}>
 
-            <div className="project-card-text">
+                <img
+                    className="project-card-image"
+                    src={project.image}
+                    alt={project.title}
+                />
 
-                <h2>{project.title}</h2>
+                <div className="project-card-text">
 
-                {project.technologies && (
-                    <p className="project-tech">
-                        {project.technologies.join(" • ")}
+                    <h2>{project.title}</h2>
+
+                    {project.technologies && (
+                        <p className="project-tech">
+                            {project.technologies.join(" • ")}
+                        </p>
+                    )}
+
+                    <p>
+                        {project.description}
                     </p>
-                )}
 
-                <p>
-                    {project.description}
-                </p>
+                    {detailed && project.status && (
+                        <p className="project-status">
+                            STATUS: {project.status.toUpperCase()}
+                        </p>
+                    )}
 
-                {detailed && project.status && (
-                    <p className="project-status">
-                        STATUS: {project.status.toUpperCase()}
-                    </p>
-                )}
-
-            </div>
-
+                </div>
+            </Link>
         </div>
     );
 }
