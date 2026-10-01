@@ -23,7 +23,7 @@
 main {
     flex: 1;
     padding-top: var(--header-height);
-    background-image: url("./assets/marble.png");
+
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -46,11 +46,25 @@ footer {
     .hero {
         width: 100%;
         height: auto;
-        min-height: 500px;
+        min-height: auto;
+
+        flex-direction: column;
+
+        padding: 40px 25px;
+        gap: 40px;
     }
 
-    .hero-text {
-        font-size: 2rem;
+    .hero-left,
+    .hero-right {
+        width: 100%;
+    }
+
+    .hero-right {
+        justify-content: center;
+    }
+
+    .terminal {
+        max-width: 100%;
     }
 
     .social-links {
@@ -367,51 +381,6 @@ html, body {
     margin-bottom: 20px !important;
 }
 
-
-.project-container {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.project-card {
-    height: 400px;
-    width: 300px;
-    max-width: calc(100% - 40px);
-    border: 3px solid black;
-    border-radius: 10px;
-    display: flex;
-    flex-direction: column;
-    margin: 30px;
-    box-shadow: 4px 4px #000000 !important;
-    background-color: lightgray;
-}
-
-.project-card-image {
-    height: 285px;
-    width: 100%;
-    border-radius:6px;
-    border: none;
-
-}
-
-.project-card-text {
-    font-size: 1rem;
-    font-family: Helvetica, sans-serif;
-    padding: 3px;
-}
-
-.project-card {
-    transition: transform 0.25s ease,
-    box-shadow 0.25s ease;
-}
-
-.project-card:hover {
-    transform: translateY(-8px);
-    box-shadow: 8px 10px 0 black;
-}
-
 .about-body {
     display: flex;
     font-family: Arial, Helvetica, sans-serif;
@@ -529,64 +498,44 @@ html, body {
     line-height: 1.6;
 }
 
-.about-input {
-
-}
-
-.project-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    border: 3px solid lightgray;
-    min-height: calc(100vh - var(--header-height) - 50px);
-}
-
-.project {
-    border: black solid 2px;
-    border-radius: 10px;
-    margin: 20px;
-    background-color: lightgray;
+.about-actions {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-
-    box-shadow: 4px 4px 4px #000000;
+    gap: 15px;
+    margin-top: 25px;
 }
 
-.project-image {
-    width: 100%;
-    max-width: 380px;
-    max-height: 450px;
-    padding: 20px;
-    border-bottom: 3px solid black
+.about-actions button {
+    padding: 12px 20px;
 
-}
+    background-color: black;
+    color: white;
 
-.project-content {
-    width: 100%;
-}
+    border: 2px solid black;
+    border-radius: 6px;
 
-.project-content p {
+    font-family: Helvetica, Arial, sans-serif;
     font-size: 1rem;
-    object-fit: contain;
-    text-indent: 20px;
-    padding-left: 12px;
-    padding-right: 12px;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    box-shadow: 4px 4px 0 black;
+
+    transition:
+            transform 0.2s ease,
+            box-shadow 0.2s ease;
 }
 
-.project-content h1 {
-    font-size: 1.8rem;
-    text-align: center;
+.about-actions button:hover {
+    transform: translateY(-3px);
+    box-shadow: 6px 6px 0 black;
 }
 
-.project-content h2 {
-    font-size: 1.2rem;
-    text-indent: 14px
+.about-actions button:nth-child(2){
+    background-color: transparent;
+    color: black
 }
 
-.project-content ul li {
-    list-style-position: inside;
-    padding-left: 20px;
-}
 
 .reactToast {
     border-bottom-left-radius: 15px;
@@ -629,4 +578,187 @@ html, body {
         opacity:0;
         transform: translateY(-100px);
     }
+}
+
+.project-section {
+    background-color: #d3d3d3;
+    padding: 60px 20px;
+}
+
+.project-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    gap: 40px;
+    margin-bottom: 50px;
+}
+
+.project-card {
+    width: 320px;
+
+    background-color: #f5f5f5;
+
+    border: 3px solid black;
+    border-radius: 10px;
+
+    box-shadow: 8px 8px 0 black;
+
+    overflow: hidden;
+
+    transition:
+            transform 0.25s ease,
+            box-shadow 0.25s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 12px 12px 0 black;
+}
+
+.project-card-image {
+    width: 100%;
+    height: 220px;
+
+    object-fit: cover;
+
+    border: none;
+    border-bottom: 3px solid black;
+}
+
+.project-card-text {
+    padding: 20px;
+
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 1rem;
+}
+
+.project-card-text h2 {
+    margin-top: 0;
+}
+
+.projects-header {
+    width: 90%;
+    max-width: 1400px;
+
+    margin: 0 auto;
+    padding: 60px 40px 20px;
+}
+
+.projects-label {
+    margin-bottom: 10px;
+
+    font-family: Consolas, monospace;
+    font-size: 0.9rem;
+    font-weight: bold;
+
+    letter-spacing: 2px;
+}
+
+.projects-header h1 {
+    margin: 0 0 15px 0;
+
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: clamp(3rem, 6vw, 5rem);
+}
+
+.projects-description {
+    max-width: 650px;
+
+    margin: 0;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.1rem;
+
+    line-height: 1.6;
+}
+
+.project-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(auto-fit, minmax(320px, 1fr));
+
+    justify-items: center;
+
+    gap: 50px;
+
+    width: 90%;
+    max-width: 1400px;
+
+    margin: 20px auto 60px;
+    padding: 40px;
+
+    min-height:
+            calc(100vh - var(--header-height) - 50px);
+}
+
+.project-card.detailed {
+    width: 100%;
+    max-width: 500px;
+
+    background-color: whitesmoke;
+
+    border: 3px solid black;
+    border-radius: 10px;
+
+    box-shadow: 8px 8px 0 black;
+}
+
+.project-card.detailed:hover {
+    transform: translateY(-6px);
+    box-shadow: 12px 12px 0 black;
+}
+
+.project-label {
+    margin: 0;
+    padding: 15px 20px;
+
+    font-family: Consolas, monospace;
+    font-size: 0.8rem;
+    font-weight: bold;
+
+    letter-spacing: 2px;
+
+    border-bottom: 3px solid black;
+}
+
+.project-card.detailed .project-card-image {
+    width: 100%;
+    height: 280px;
+
+    object-fit: cover;
+
+    border-bottom: 3px solid black;
+}
+
+.project-card.detailed .project-card-text {
+    padding: 25px;
+}
+
+.project-card.detailed h2 {
+    margin-top: 0;
+    margin-bottom: 10px;
+
+    font-size: 1.8rem;
+}
+
+.project-card.detailed p {
+    line-height: 1.5;
+}
+
+.project-tech {
+    margin-bottom: 20px;
+
+    font-family: Consolas, monospace;
+    font-size: 0.9rem;
+}
+
+.project-status {
+    margin-top: 25px;
+
+    font-family: Consolas, monospace;
+    font-size: 0.85rem;
+    font-weight: bold;
 }

@@ -4,58 +4,43 @@ import wbd from '../assets/website-project-demo.png'
 import gvt from '../assets/graph-viz-temp.jpg'
 import gv from '../assets/GVVikes.png'
 
+import projects from '../data/projectdata.jsx';
+import ProjectCard from '../components/ProjectCard.jsx';
+
 export default function Projects() {
-    return(
-        <div className={"wrapper"}>
-            <section className={'project-grid'}>
-                    <div className={'project'}>
-                        <img className={'project-image'} src={ wbd } alt={''}/>
-                        <div className={'project-content'}>
-                            <h1>
-                                My Portfolio Website
-                            </h1>
+    return (
+        <div className="wrapper">
 
-                            <p>
-                                This website was my first attempt at using React, and I really enjoyed coding it.
-                                I learned a lot about JavaScript, CSS, and HTML in the process of creating this.
+            <section className="projects-header">
 
-                            </p>
+                <p className="projects-label">
+                    02 / PROJECTS
+                </p>
 
-                            <h2>
-                                Skills I learned:
-                            </h2>
-                            <ul>
-                                <li>React</li>
-                                <li>Node.js</li>
-                                <li>Javascript</li>
-                                <li>CSS</li>
-                            </ul>
-                        </div>
-                    </div>
+                <h1>
+                    Things I've Built
+                </h1>
 
-                    <div className={'project'}>
-                        <img className={'project-image'} src={ gv } alt={''}/>
-                        <div className={'project-content'}>
-                            <h1>
-                                MCS Website and App
-                            </h1>
-                        </div>
+                <p className="projects-description">
+                    A collection of software, data, and development projects
+                    I've worked on or am currently building.
+                </p>
 
-                    </div>
-
-                    <div className={'project'}>
-
-                        <img className={'project-image'} src={ gvt } alt={''}/>
-                        <div className={'project-content'}>
-                            <h1>
-                                W.I.P. Graph Visualizer
-                            </h1>
-                        </div>
-
-
-                    </div>
             </section>
+
+            <section className="project-grid">
+
+                {projects.map(project => (
+                    <ProjectCard
+                        key={project.id}
+                        project={project}
+                        detailed={true}
+                    />
+                ))}
+
+            </section>
+
         </div>
-    )
+    );
 }
 

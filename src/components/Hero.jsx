@@ -23,8 +23,7 @@ export default function Hero() {
                 </h2>
 
                 <p className="hero-description">
-                    I build software, interactive tools, and data-driven projects
-                    while exploring new technologies and challenging problems.
+                    I enjoy creating stuff.
                 </p>
 
                 <div className="hero-buttons">

@@ -1,18 +1,46 @@
 import projects from "../routes/Projects.jsx"
 import r from "../assets/rprogram.jpg";
+
 import React from "react";
 
-
-export default function ProjectCard(props){
+export default function ProjectCard({ project, detailed = false }) {
     return (
-            <div className="project-card">
-                    <div>
-                        <img className ="project-card-image" src={props.project.image} alt="" />
-                    </div>
-                    <div className={'project-card-text'}>
-                         {props.project.description}
-                    </div>
-                </div>
-        )
-}
+        <div className={detailed ? "project-card detailed" : "project-card"}>
 
+            {detailed && (
+                <p className="project-label">
+                    PROJECT_{String(project.id).padStart(2, "0")}
+                </p>
+            )}
+
+            <img
+                className="project-card-image"
+                src={project.image}
+                alt={project.title}
+            />
+
+            <div className="project-card-text">
+
+                <h2>{project.title}</h2>
+
+                {project.technologies && (
+                    <p className="project-tech">
+                        {project.technologies.join(" • ")}
+                    </p>
+                )}
+
+                <p>
+                    {project.description}
+                </p>
+
+                {detailed && project.status && (
+                    <p className="project-status">
+                        STATUS: {project.status.toUpperCase()}
+                    </p>
+                )}
+
+            </div>
+
+        </div>
+    );
+}

@@ -18,15 +18,22 @@ export default function Home() {
                 <Hero />
             </div>
 
-            <div>
+            <section className={"project-section"}>
                 <h1 className={"heading3"}>
                     See some of my projects!
                 </h1>
-            </div>
-            <div className={"project-container"}>
-                <ProjectCard project={projects[0]} />
-                <ProjectCard project={projects[1]} />
-            </div>
+                <div className={'project-container'}>
+                    {projects
+                        .filter(project => project.featured)
+                        .map(project => (
+                            <ProjectCard
+                                key={project.id}
+                                project={project}
+                            />
+                        ))
+                    }
+                </div>
+            </section>
 
 
 
