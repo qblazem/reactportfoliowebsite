@@ -1,9 +1,3 @@
-import react from 'react';
-import hero1 from '../assets/hero.png';
-import wbd from '../assets/website-project-demo.png'
-import gvt from '../assets/graph-viz-temp.jpg'
-import gv from '../assets/GVVikes.png'
-
 import projects from '../data/projectdata.jsx';
 import ProjectCard from '../components/ProjectCard.jsx';
 

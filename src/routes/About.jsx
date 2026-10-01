@@ -1,4 +1,3 @@
-import react from 'react';
 import mugshot from '../assets/Mugshot.png'
 
 export default function About() {

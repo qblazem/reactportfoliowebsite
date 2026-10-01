@@ -1,6 +1,3 @@
-import projects from "../routes/Projects.jsx"
-import r from "../assets/rprogram.jpg";
-
 import React from "react";
 
 export default function ProjectCard({ project, detailed = false }) {

@@ -1,11 +1,6 @@
 import React from 'react';
-import MyButton from "../components/Button";
-import q from '../assets/q.png'
-import HorizontalLine from "../components/HorizontalLine.jsx";
-import r from '../assets/rprogram.jpg'
 import ProjectCard from '../components/ProjectCard';
 import projects from '../data/projectdata.jsx';
-import rp from '../assets/randpro.jpg'
 import Hero from '../components/Hero.jsx';
 import ReactToast from '../components/MadeWithReact.jsx'
 

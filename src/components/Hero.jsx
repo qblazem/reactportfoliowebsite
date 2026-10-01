@@ -1,8 +1,3 @@
-
-import image4 from '../assets/linkedin-svgrepo-com.svg'
-import image5 from '../assets/instagram.svg'
-import image6 from '../assets/github.svg'
-
 import linkedin from '../assets/linkedin-svgrepo-com.svg'
 import github from '../assets/github.svg'
 
