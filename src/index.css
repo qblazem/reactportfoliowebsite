@@ -238,41 +238,6 @@ html, body {
     padding: 3px;
 }
 
-
-.gallery-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 10px;
-    margin-bottom:30px
-}
-
-.gallery-image {
-    object-fit: cover;
-    height: 100%;
-    width: 100%;
-
-}
-
-.enlarged-image {
-    height: 50%;
-    width: 50%;
-    position: relative;
-    justify-content: center;
-    align-items: center;
-}
-
-.enlarged-image-container {
-    position: fixed;
-    top: 250px;
-    left: 625px;
-    bottom: 0;
-    right: 0;
-    justify-content: center;
-    align-items: center;
-    height: fit-content;
-    width: fit-content;
-}
-
 .about-body {
     display: flex;
     font-family: Arial, Helvetica, sans-serif;
