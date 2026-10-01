@@ -16,13 +16,8 @@ export default function App() {
     return(
         <BrowserRouter>
             {/* specific routes for each page  */}
-            <header>
-                <Navbar/>
-                <h1>
+            <Navbar/>
 
-                </h1>
-
-            </header>
             <main>
                 <Routes>
 

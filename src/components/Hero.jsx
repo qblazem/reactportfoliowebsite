@@ -1,6 +1,4 @@
-import image from '../galleryimages/IMG_5768.JPEG'
-import image2 from '../galleryimages/IMG_5596.JPEG'
-import image3 from '../galleryimages/IMG_6982.JPEG'
+
 import image4 from '../assets/linkedin-svgrepo-com.svg'
 import image5 from '../assets/instagram.svg'
 import image6 from '../assets/github.svg'
