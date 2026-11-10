@@ -425,7 +425,7 @@ header {
     margin-top: 25px;
 }
 
-.about-actions button {
+.about-actions a button {
     padding: 12px 20px;
 
     background-color: black;
@@ -447,12 +447,12 @@ header {
             box-shadow 0.2s ease;
 }
 
-.about-actions button:hover {
+.about-actions a button:hover {
     transform: translateY(-3px);
     box-shadow: 6px 6px 0 black;
 }
 
-.about-actions button:nth-child(2){
+.about-actions a:nth-child(2) button{
     background-color: transparent;
     color: black
 }
@@ -660,6 +660,8 @@ header {
     color: inherit;
     display:block;
 }
+
+
 
 
 

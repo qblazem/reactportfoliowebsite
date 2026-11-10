@@ -20,8 +20,20 @@ export default function About() {
                     </p>
 
                     <div className="about-actions">
-                        <button>Contact Me</button>
-                        <button>View Resume</button>
+                        <a href={""}>
+                            <button>
+
+                                Contact Me
+
+                            </button>
+                        </a>
+                        <a href={""}>
+                            <button>
+
+                                View Resume
+
+                            </button>
+                        </a>
                     </div>
                 </div>
 
