@@ -115,7 +115,7 @@ html, body {
 }
 
 
-.navbar a {
+.navbar nav a {
     text-decoration: none;
     color: white;
     font-family: Helvetica, sans-serif;
@@ -661,8 +661,13 @@ header {
     display:block;
 }
 
+.burger {
+    display: none;
+}
 
-
+.menu-container {
+    display: none;
+}
 
 
 
@@ -717,4 +722,76 @@ header {
     .about-content {
         width: 100%;
     }
+
+    .burger {
+        display: flex;
+        margin-left: auto;
+        margin-right: 20px;
+        font-size: 1.2rem;
+    }
+
+    .navbar {
+
+    }
+
+    .logo-link {
+
+    }
+
+    .logo {
+
+    }
+
+    .navbar nav a {
+        display:none;
+    }
+
+    .nav-open {
+        display:flex;
+        flex-direction: column;
+        background-color: black;
+        align-items: center;
+        position: absolute;
+        top: 100%;
+        width: 160px;
+        right: 15px;
+        height: auto;
+        border-radius: 4px;
+        margin-top: 24px;
+        padding: 0;
+    }
+
+    .navbar nav.nav-open a {
+        display: block;
+        color: white;
+        text-align: center;
+        width:100%;
+        margin: 0;
+        padding: 15px;
+    }
+
+    .navbar nav.nav-open a:nth-child(1){
+        border-bottom: 3px solid whitesmoke;
+    }
+
+    .navbar nav.nav-open a:nth-child(2){
+        border-bottom: 3px solid whitesmoke;
+    }
+
+    .nav-closed {
+        display: none;
+    }
+
+    .menu-container {
+        position: relative;
+        display: flex;
+        width: 100%;
+        height:auto;
+    }
+
+    .project-grid {
+        grid-template-columns: minmax(0, 1fr);
+        padding: 20px;
+    }
+
 }
