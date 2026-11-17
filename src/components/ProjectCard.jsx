@@ -1,5 +1,6 @@
 import React from "react";
 import {Link} from "react-router-dom";
+import '../styles/ProjectCard.css';
 
 export default function ProjectCard({ project, detailed = false }) {
     return (

@@ -1,3 +1,5 @@
+import '../styles/Notfound.css'
+
 
 export default function Notfound() {
     return (

@@ -2,6 +2,7 @@ import React from 'react';
 import ProjectCard from '../components/ProjectCard';
 import projects from '../data/projectdata.jsx';
 import Hero from '../components/Hero.jsx';
+import '../styles/Home.css';
 
 
 

@@ -1,0 +1,214 @@
+
+
+.hero-container {
+    width: 100%;
+    background: linear-gradient(whitesmoke, gray);
+    border-bottom: 2px solid black;
+}
+
+.hero {
+    width: 90%;
+    max-width: 1300px;
+    min-height: 650px;
+
+    margin: 0 auto;
+    padding: 60px 40px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 80px;
+}
+
+.hero-left {
+    flex: 1;
+}
+
+.hero-intro {
+    font-family: Consolas, monospace;
+    font-weight: bold;
+    letter-spacing: 3px;
+    margin-bottom: 10px;
+}
+
+.hero-name {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: clamp(4rem, 8vw, 7rem);
+    line-height: 0.9;
+
+    margin: 0 0 25px 0;
+}
+
+.hero-title {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: clamp(1.2rem, 2vw, 1.8rem);
+
+    margin-bottom: 20px;
+}
+
+.hero-description {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.1rem;
+    line-height: 1.6;
+
+    max-width: 600px;
+}
+
+
+.hero-buttons {
+    display: flex;
+    gap: 15px;
+    margin-top: 30px;
+}
+
+.hero-button {
+    padding: 12px 20px;
+
+    background-color: black;
+    color: white;
+
+    border: 2px solid black;
+    border-radius: 6px;
+
+    text-decoration: none;
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: bold;
+
+    box-shadow: 4px 4px 0 black;
+
+    transition:
+            transform 0.2s ease,
+            box-shadow 0.2s ease;
+}
+
+.hero-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 6px 6px 0 black;
+}
+
+.hero-button.secondary {
+    background-color: transparent;
+    color: black;
+}
+
+.social-links {
+    display: flex;
+    gap: 15px;
+
+    margin-top: 25px;
+    justify-content: flex-start;
+}
+
+.circle {
+    width: 45px;
+    height: 45px;
+
+    border-radius: 50%;
+    background-color: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    transition: transform 0.2s ease;
+}
+
+.circle:hover {
+    transform: translateY(-4px);
+}
+
+.hero-link-bubbles {
+    width: 24px;
+    height: 24px;
+}
+
+.hero-right {
+    flex: 1;
+
+    display: flex;
+    justify-content: center;
+}
+
+.terminal {
+    width: 100%;
+    max-width: 480px;
+
+    background-color: #111;
+    color: white;
+
+    border: 3px solid black;
+    border-radius: 10px;
+
+    box-shadow: 8px 8px 0 black;
+
+    overflow: hidden;
+}
+
+.terminal-top {
+    height: 40px;
+    background-color: #333;
+
+    display: flex;
+    align-items: center;
+
+    padding-left: 15px;
+    gap: 8px;
+}
+
+.terminal-top span {
+    width: 12px;
+    height: 12px;
+
+    background-color: lightgray;
+    border-radius: 50%;
+}
+
+.terminal-content {
+    padding: 25px;
+
+    font-family: Consolas, monospace;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.terminal-content p {
+    margin: 0 0 8px 0;
+}
+
+.terminal-response {
+    color: lightgray;
+    padding-left: 20px;
+    margin-bottom: 20px !important;
+}
+
+@media (max-width: 768px) {
+
+
+    .hero {
+        width: 100%;
+        height: auto;
+        min-height: auto;
+
+        flex-direction: column;
+
+        padding: 40px 25px;
+        gap: 40px;
+    }
+
+    .hero-left,
+    .hero-right {
+        width: 100%;
+    }
+
+    .hero-right {
+        justify-content: center;
+    }
+
+    .terminal {
+        max-width: 100%;
+    }
+
+    .social-links {
+        flex-wrap: wrap;
+    }
+}

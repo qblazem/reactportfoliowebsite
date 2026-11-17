@@ -1,0 +1,25 @@
+
+.project-section-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-family: Roboto, sans-serif;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.project-section {
+    background-color: whitesmoke;
+    padding: 60px 20px;
+}
+
+.project-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    gap: 40px;
+    margin-bottom: 50px;
+}

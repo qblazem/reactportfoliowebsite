@@ -1,11 +1,12 @@
 import projects from '../data/projectdata.jsx';
 import ProjectCard from '../components/ProjectCard.jsx';
+import '../styles/Projects.css';
 
 export default function Projects() {
     return (
         <div className="wrapper">
 
-            <section className="projects-header">
+            <section className="projects-header page-header">
 
                 <p className="projects-label">
                     02 / PROJECTS

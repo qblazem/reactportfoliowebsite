@@ -1,5 +1,7 @@
 import linkedin from '../assets/linkedin-svgrepo-com.svg'
 import github from '../assets/github.svg'
+import '../styles/Hero.css'
+
 
 export default function Hero() {
     return (

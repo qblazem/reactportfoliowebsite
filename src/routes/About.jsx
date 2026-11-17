@@ -1,11 +1,12 @@
 
 import mugshot from '../assets/Mugshot.png';
+import '../styles/About.css';
 
 export default function About() {
     return (
         <div className="wrapper">
 
-            <section className="about-header">
+            <section className="about-header page-header">
                 <p className="about-label">
                     03 / ABOUT ME
                 </p>
