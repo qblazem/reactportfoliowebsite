@@ -18,7 +18,7 @@ export default function Hero() {
                 </h2>
 
                 <p className="hero-description">
-                    I enjoy creating stuff.
+                    I enjoy building software and working with data. I love web development.
                 </p>
 
                 <div className="hero-buttons">

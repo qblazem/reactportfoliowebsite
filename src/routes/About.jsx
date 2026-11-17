@@ -1,43 +1,55 @@
-import mugshot from '../assets/Mugshot.png'
+
+import mugshot from '../assets/Mugshot.png';
 
 export default function About() {
     return (
         <div className="wrapper">
-            <section className="about-hero">
 
-                <div className="about-image">
-                    <img src={ mugshot } alt="Quillan McMurry" />
-                </div>
+            <section className="about-header">
+                <p className="about-label">
+                    03 / ABOUT ME
+                </p>
 
-                <div className="about-content">
-                    <h1>About Me</h1>
+                <h1 className="about-h1">
+                    Story of My Life
+                </h1>
+            </section>
 
-                    <h2>Computer Science & Data Science Student</h2>
+            <section className="about-content">
 
-                    <p>
-                        I'm a Computer Science and Data Science student with an interest in software development, problem solving, and building projects that combine creativity with technical challenges. I enjoy learning new technologies and experimenting with different approaches to development. Outside of programming, I spend much of my time competing in athletics, working on personal projects, and exploring new ideas.
+                <div className="about-info">
+                    <p className="about-p">
+                        I was born and raised in Des Moines, Iowa.
+                        I graduated from Norwalk High School and
+                        am currently going to college at Grand View
+                        University. I am double majoring in Computer
+                        Science and Data Science. In my free time I
+                        enjoy hiking and the outdoors, spending time
+                        with friends and family, programming, and
+                        exercising.
 
                     </p>
 
-                    <div className="about-actions">
-                        <a href={""}>
-                            <button>
-
-                                Contact Me
-
-                            </button>
-                        </a>
-                        <a href={""}>
-                            <button>
-
-                                View Resume
-
-                            </button>
-                        </a>
+                    <div className="about-buttons">
+                        <button>Contact Me</button>
+                        <button>View Resume</button>
                     </div>
                 </div>
 
+                <figure className="about-figure">
+                    <img
+                        className="about-img"
+                        src={mugshot}
+                        alt="Quillan McMurry"
+                    />
+
+                    <figcaption className="fig-caption">
+                        QUILLAN MCMURRY
+                    </figcaption>
+                </figure>
+
             </section>
+
         </div>
     );
 }
