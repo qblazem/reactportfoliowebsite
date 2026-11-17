@@ -16,7 +16,7 @@ export default function Footer() {
                         <a href="https://github.com/qblazem">
                             GitHub
                         </a>
-                        <a href="www.linkedin.com/in/quillan-mcmurry-8971b7282">
+                        <a href="https://linkedin.com/in/quillan-mcmurry-8971b7282">
                             LinkedIn
                         </a>
                     </div>

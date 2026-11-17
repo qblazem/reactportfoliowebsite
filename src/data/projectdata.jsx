@@ -1,6 +1,5 @@
-import react from 'react';
-import r from '../assets/rprogram.jpg'
-import rq from '../assets/randpro.jpg'
+
+import temp from '../assets/GVVikes.png'
 
 import portfolioImage from "../assets/website-project-demo.png";
 import mcsImage from "../assets/GVVikes.png";
@@ -35,7 +34,29 @@ const projects = [
         technologies: ["React"],
         status: "In Progress",
         featured: false
+    },
+
+    {
+        id: 4,
+        title: "Video Store Inventory",
+        description: "School project using agile methods. As scrum master, I led my team into creating a windows application using python, tkinter, and Supabase.",
+        image: temp,
+        technologies: ["Python, tkinter, Supabase"],
+        status: "Complete",
+        featured: true
+
+    },
+
+    {
+        id: 5,
+        title: "GV Rubric",
+        description:"Rubric for the GV symposium",
+        image: temp,
+        technologies: ["HTML", "CSS", "JavaScript"],
+        status: "In Progress",
+        featured: false
     }
+
 ];
 
 export default projects;
